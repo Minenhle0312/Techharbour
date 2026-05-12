@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us | TechHarbour</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="logo">TechHarbour</a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="specials.html">Specials</a>
+      <a href="sales.html">Sales</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo logo-small">TechHarbour</a>
+      <button class="mobile-menu-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="specials.html">Specials</a>
+      <a href="sales.html">Sales</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="menu-overlay"></div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Contact <span>TechHarbour</span></h1>
+    <p>
+      Need mobile or remote IT support across Durban? Get in touch and a technician will come to you or help you online.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <div id="form-status" class="form-status" style="display:none;"></div>
+  <div class="container">
+    <h2>Request Support</h2>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="card">
+          <h3>Get In Touch</h3>
+          <p><strong>Phone:</strong> +27 76 057 8332</p>
+          <p><strong>Email:</strong> techharbour@outlook.com</p>
+          <p><strong>Hours:</strong> Mon-Fri 8PM-5AM</p>
+          <p><strong>Hours:</strong> Sat-Sun and Public holidays 8AM-10PM</p>
+          <p><strong>Emergency:</strong> 24/7 for priority clients</p>
+        </div>
+
+        <div class="card">
+          <h3>Mobile Support in Durban</h3>
+          <p>No office or shop — just a mobile company who visits homes and businesses across Durban.</p>
+          <p><strong>Drop-off:</strong> by appointment only in agreed safe public locations.</p>
+          <p><strong>Service Area:</strong> Durban mobile support and remote assistance.</p>
+        </div>
+
+        <div class="card">
+          <h3>Quick Response</h3>
+          <p>We typically respond to all inquiries within 2 hours during business hours.</p>
+          <p>For urgent issues, call us directly for immediate assistance.</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form onsubmit="sendMessage(event)">
+          <div class="form-row">
+            <input type="text" id="name" placeholder="Your Name *" required>
+            <input type="email" id="email" placeholder="Your Email *" required>
+          </div>
+
+          <div class="form-row">
+            <input type="tel" id="phone" placeholder="Phone Number">
+            <select id="service-type">
+              <option value="">Select Service Type</option>
+              <option value="computer-repair">Computer Repair</option>
+              <option value="mobile-repair">Mobile Repair</option>
+              <option value="printer-support">Printer Support</option>
+              <option value="networking">Networking</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="software">Software Support</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <select id="urgency">
+            <option value="">Select Urgency Level</option>
+            <option value="low">Low - Within a week</option>
+            <option value="medium">Medium - Within 2-3 days</option>
+            <option value="high">High - Within 24 hours</option>
+            <option value="emergency">Emergency - ASAP</option>
+          </select>
+
+          <textarea id="message" placeholder="Describe your issue in detail... *" required></textarea>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox" id="remote-support"> I prefer remote support if possible
+            </label>
+            <label>
+              <input type="checkbox" id="onsite-service"> I need on-site service
+            </label>
+          </div>
+
+
+          <button class="btn" type="submit">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 TechHarbour — IT Support You Can Trust
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

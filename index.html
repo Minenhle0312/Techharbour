@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TechHarbour | IT Support & Repairs</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="navbar">
+    <a href="index.html" class="logo">TechHarbour</a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="specials.html">Specials</a>
+      <a href="sales.html">Sales</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="logo logo-small">TechHarbour</a>
+      <button class="mobile-menu-close" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="specials.html">Specials</a>
+      <a href="sales.html">Sales</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="menu-overlay"></div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Professional Mobile IT Support & <span>Expert Device Repairs</span></h1>
+    <p>
+      Fast, reliable mobile and remote IT support across Durban for computers, mobile devices, networks, and cybersecurity. 
+      No shop overhead — just affordable, on-demand technical expertise delivered wherever you need it.  
+    </p>
+    <button class="btn" onclick="scrollToSection('services')">
+      Get Support
+    </button>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Computer Repairs</h3>
+        <p>Hardware fixes, OS repair, virus removal & upgrades.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mobile Repairs</h3>
+        <p>Screen, battery, software fixes & diagnostics.</p>
+      </div>
+
+      <div class="card">
+        <h3>Printer Support</h3>
+        <p>Setup, troubleshooting & maintenance services.</p>
+      </div>
+
+      <div class="card">
+        <h3>Networking</h3>
+        <p>WiFi setup, LAN configuration & business networks.</p>
+      </div>
+
+      <div class="card">
+        <h3>CCTV solutions</h3>
+        <p>Complete CCTV installation, maintenance, and troubleshooting services for all major brands and types of CCTV systems.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity</h3>
+        <p>Device protection, malware removal & security audits.</p>
+      </div>
+
+      <div class="card">
+        <h3>Software Support</h3>
+        <p>Websites, automation tools & Python applications.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <h2>About TechHarbour</h2>
+    <p>
+      TechHarbour is a Durban-based IT support company providing professional, reliable, and affordable technology solutions for home users and small businesses. From computer and mobile repairs to networking, printers, cybersecurity, and remote support, TechHarbour delivers fast turnaround times, personalized service, and practical solutions designed to keep your devices and business running smoothly. Whether you need urgent technical assistance or ongoing IT support, TechHarbour offers dependable service you can trust without the high costs of large IT companies.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div id="form-status" class="form-status" style="display:none;"></div>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Describe your issue..." required></textarea>
+      <button class="btn" type="submit">Request Support</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 TechHarbour — IT Support You Can Trust
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
